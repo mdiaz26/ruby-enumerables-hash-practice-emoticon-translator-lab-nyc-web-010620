@@ -1,7 +1,12 @@
 # require modules here
 
-def load_library
-  # code goes here
+def load_library(file_path)
+  require 'yaml'
+  emoticons = YAML.load_file(file_path)
+  library_hash = {}
+  library_hash[:get_meaning] = {}
+  library_hash[:get_emoticon] = {}
+  library_hash
 end
 
 def get_japanese_emoticon
