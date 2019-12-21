@@ -16,9 +16,7 @@ def load_library(file_path)
 end
 
 def get_japanese_emoticon(file_path, input)
-  load_library(file_path)
-    binding.pry
-  # return library_hash[:get_emoticon][input]
+  return load_library(file_path)[:get_emoticon][input]
 end
 
 def get_english_meaning(file_path, input)
