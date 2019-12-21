@@ -15,7 +15,9 @@ def load_library(file_path)
   library_hash
 end
 
-def get_japanese_emoticon(emoticons, input)
+def get_japanese_emoticon(file_path, input)
+  require 'yaml'
+  emoticons = YAML.load_file(file_path)
   # code goes here
 end
 
