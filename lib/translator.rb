@@ -11,8 +11,8 @@ def load_library(file_path)
   library_hash[:get_emoticon] = {}
   emoticons.each do |emoticon_name, keys|
     library_hash[:get_emoticon][keys[0]] = keys[1]
-    binding.pry
   end
+    binding.pry
   library_hash
 end
 
