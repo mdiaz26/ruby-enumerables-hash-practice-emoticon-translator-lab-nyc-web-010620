@@ -6,7 +6,8 @@ def load_library(file_path)
   library_hash = {}
   library_hash[:get_meaning] = {}
   library_hash[:get_emoticon] = {}
-  emoticons.each ||
+  emoticons.each |emoticon_name, keys|
+  
   library_hash
 end
 
