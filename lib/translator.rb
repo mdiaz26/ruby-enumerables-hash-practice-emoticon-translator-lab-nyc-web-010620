@@ -12,12 +12,12 @@ def load_library(file_path)
   emoticons.each do |emoticon_name, keys|
     library_hash[:get_emoticon][keys[0]] = keys[1]
   end
-    binding.pry
   library_hash
 end
 
 def get_japanese_emoticon(file_path, input)
   load_library(file_path)
+    binding.pry
   # return library_hash[:get_emoticon][input]
 end
 
